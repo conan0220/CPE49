@@ -12,6 +12,7 @@ int main() {
         vector<int> a;
         getline(cin, aStr);
         getline(cin, aStr);
+        aStr += " ";
         string temp = "";
         for (const char& ch : aStr) {
             if (ch == ' ') {
@@ -25,7 +26,7 @@ int main() {
 
         double total = 0;
         int j = 0;
-        for (int i = a.size()-1; i >= 0; i--) {
+        for (int i = a.size()-1; i > 0; i--) {
             total += (a[j] * i * pow(x, i-1)); 
             j++;
         }
