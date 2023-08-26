@@ -15,7 +15,7 @@ int main() {
         long long last = N*N - 1;
         bool symmetric = true;
         for (int j = 0; j < N*N/2; j++) {
-            if (M[j] != M[last-j]) {
+            if (M[j] != M[last-j] || M[j] < 0) {
                 symmetric = false;
                 break;
             }
