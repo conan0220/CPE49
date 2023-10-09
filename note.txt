@@ -19,3 +19,5 @@
 
 - 注意
 1. cin 後面如果想用 getline(cin, str) 記得先再 getline(cin, str) 來清空 buffer 的 '\n'
+
+2. #include<bits/stdc++.h> 包含大部分標頭檔
